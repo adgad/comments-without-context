@@ -6,13 +6,15 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	margin: 0;
-	background-color: #F1F1F1;
+	background-color: #673AB7;
 }
 
 .header {
-	background-color: #77B9FF;
+	background-color: #512DA8;
 	text-align: center;
-	box-shadow: 0 0 1px 1px #999;
+	box-shadow: 0 0 1px 1px #333;
+	color: #fff;
+	font-family: 'Capriola', sans-serif;
 }
 
 .header__text {
@@ -38,12 +40,21 @@ body {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	background-color: #fff;
-	border: 1px solid #ccc;
+	background-color: #fafafa;
 	padding: 40px;
 	max-width: 70%;
+  box-shadow: 1px 2px 3px 1px #333;
+  border-radius: 3px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
 }
 
+.comment blockquote {
+  font-size: 20px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 20px 0 0px;
+}
 .user {
 	width: 20%;
 	text-align: center;
@@ -64,12 +75,13 @@ body {
 }
 .more {
 	padding: 20px 60px;
-	background-color: #77B9FF;
+	background-color: #F77575;
 	display: inline-block;
 	margin: 0 auto;
-	border: 1px solid #ddd;
 	text-decoration: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #000;
 }
 .more:hover {
-	background-color: #4CA3FF;
+	background-color: #FF2727;
 }
