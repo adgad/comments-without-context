@@ -16,10 +16,14 @@
 
 	<div class="comments">
 		<figure class="comment">
-	     <blockquote>{{comment}}</blockquote>
+	     <blockquote>{{comment}} 
+	     <br/><a class="comment__view" href="https://facebook.com/{{commentId}}">View in context</a></blockquote>
+
 	     <figcaption class="user">
+	     	<a class="user__link" href="https://facebook.com/{{user.id}}">
 	     		<img class="user__image" src="http://graph.facebook.com/{{user.id}}/picture?type=large"/>
 	     		<cite class="user__name">{{user.name}}</cite>
+	     	</a>
 	     	</figcaption>
 		</figure>
 	</div>
