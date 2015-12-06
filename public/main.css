@@ -101,3 +101,19 @@ body {
 .more:hover {
 	background-color: #FF2727;
 }
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+  margin: 5px;
+}
+ul.share-buttons li>a{
+	opacity: 0.5;
+}
+ul.share-buttons li>a:hover{
+	opacity: 1;
+}
