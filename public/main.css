@@ -1,0 +1,68 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	margin: 0;
+	background-color: #F1F1F1;
+}
+
+.header {
+	background-color: #77B9FF;
+	text-align: center;
+	box-shadow: 0 0 1px 1px #999;
+}
+
+.header__text {
+	margin: 0;
+	padding: 20px;
+}
+
+.comments {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 50px;
+}
+.comment {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 40px;
+	max-width: 70%;
+}
+
+.user {
+	width: 20%;
+	text-align: center;
+}
+
+.user__image {
+	   max-width: 80px;
+    border-radius: 80px;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+.user__name {
+	display: block;
+}
+
+.more {
+	padding: 20px 60px;
+	background-color: #77B9FF;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #ddd;
+}

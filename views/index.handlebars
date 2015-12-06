@@ -5,16 +5,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comments without Context</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="/main.css">
 </head>
 <body>
-	<h1>Comments without Context</h1>
-	<figure class="comment">
-     <blockquote>{{comment}}</blockquote>
-     <figcaption class="user">
-     		<img class="user__image" src="http://graph.facebook.com/{{user.id}}/picture?type=square"/>
-     		<cite class="user__name">{{user.name}}</cite>
-     	</figcaption>
-	</figure>
+
+	<header class="header">
+		<h1 class="header__text">Comments without Context</h1>
+	</header>
+
+	<div class="comments">
+		<figure class="comment">
+	     <blockquote>{{comment}}</blockquote>
+	     <figcaption class="user">
+	     		<img class="user__image" src="http://graph.facebook.com/{{user.id}}/picture?type=large"/>
+	     		<cite class="user__name">{{user.name}}</cite>
+	     	</figcaption>
+		</figure>
+	</div>
+
+	<button class="more">MOAR</button>
 </body>
 </html>
