@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/:id', (req, res) => {
+	res.set('Cache-Control', 'public, max-age=3600');
 	require('./lib/fb').getComment(req.params.id)
 	.then(comment => {
 		res.render('index', comment);
