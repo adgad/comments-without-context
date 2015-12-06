@@ -16,8 +16,6 @@
 
 	<div class="comments">
 		<figure class="comment">
-	     <blockquote>{{comment}} 
-	     <br/><a class="comment__view" href="https://facebook.com/{{commentId}}">View in context</a></blockquote>
 
 	     <figcaption class="user">
 	     	<a class="user__link" href="https://facebook.com/{{user.id}}">
@@ -25,6 +23,10 @@
 	     		<cite class="user__name">{{user.name}}</cite>
 	     	</a>
 	     	</figcaption>
+
+	     <blockquote>{{{comment}}} <br/>
+	     <a class="comment__view" href="https://facebook.com/{{commentId}}">View in context</a></blockquote>
+
 		</figure>
 	</div>
 	<footer class="footer">
