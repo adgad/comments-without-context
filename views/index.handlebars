@@ -11,7 +11,11 @@
 	<meta property="og:title" content="Comments without Context" />
 	<meta property="og:description"        content="{{message}}" />
 
-
+	<script>
+	if(window.history && window.history.pushState) {
+		window.history.pushState({'html': document.outerHtml, 'title': document.title}, '', '/{{id}}');
+	}
+	</script
 </head>
 <body>
 
