@@ -50,19 +50,26 @@ body {
 }
 
 .user__image {
-	   max-width: 80px;
-    border-radius: 80px;
-    border: 1px solid #ccc;
-    padding: 3px;
+  max-width: 80px;
+  border-radius: 80px;
+  border: 1px solid #ccc;
+  padding: 3px;
 }
 .user__name {
 	display: block;
 }
 
+.footer {
+	text-align: center;
+}
 .more {
 	padding: 20px 60px;
 	background-color: #77B9FF;
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
 	border: 1px solid #ddd;
+	text-decoration: none;
+}
+.more:hover {
+	background-color: #4CA3FF;
 }
