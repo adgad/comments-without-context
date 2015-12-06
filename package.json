@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "forever index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
+    "forever": "^0.15.1",
     "isomorphic-fetch": "^2.2.0"
   }
 }
