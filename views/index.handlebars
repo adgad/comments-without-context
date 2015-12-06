@@ -17,8 +17,8 @@
 	<meta property="twitter:image" content="http://graph.facebook.com/{{from.id}}/picture?type=large" />
 
 	<script>
-	if(window.history && window.history.pushState) {
-		window.history.pushState({'html': document.outerHtml, 'title': document.title}, '', '/{{id}}');
+	if(window.history && window.history.replaceState) {
+		window.history.replaceState({'html': document.outerHtml, 'title': document.title}, '', '/{{id}}');
 	}
 	</script
 </head>
