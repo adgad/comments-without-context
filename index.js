@@ -21,4 +21,14 @@ app.get('/', (req, res) => {
 	res.render('index', items[Math.floor(Math.random()*items.length)]);
 });
 
+
+app.get('/:id', (req, res) => {
+	require('./lib/fb').getComment(req.params.id)
+	.then(comment => {
+		res.render('index', comment);
+	})
+	
+});
+
+
 app.listen(process.env.PORT || 3000);

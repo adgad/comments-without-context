@@ -7,6 +7,11 @@
 	<title>Comments without Context</title>
 	<link rel="stylesheet" href="/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Capriola' rel='stylesheet' type='text/css'>
+	<link rel="canonical" href="/{{id}}" />
+	<meta property="og:title" content="Comments without Context" />
+	<meta property="og:description"        content="{{message}}" />
+
+
 </head>
 <body>
 
@@ -18,14 +23,14 @@
 		<figure class="comment">
 
 	     <figcaption class="user">
-	     	<a class="user__link" href="https://facebook.com/{{user.id}}">
-	     		<img class="user__image" src="http://graph.facebook.com/{{user.id}}/picture?type=large"/>
-	     		<cite class="user__name">{{user.name}}</cite>
+	     	<a class="user__link" href="https://facebook.com/{{from.id}}">
+	     		<img class="user__image" src="http://graph.facebook.com/{{from.id}}/picture?type=large"/>
+	     		<cite class="user__name">{{from.name}}</cite>
 	     	</a>
 	     	</figcaption>
 
-	     <blockquote>{{{comment}}} <br/>
-	     <a class="comment__view" href="https://facebook.com/{{commentId}}">View in context</a></blockquote>
+	     <blockquote>{{{message}}} <br/>
+	     <a class="comment__view" href="https://facebook.com/{{id}}">View in context</a></blockquote>
 
 		</figure>
 	</div>
